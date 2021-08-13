@@ -19,7 +19,7 @@ WIDTH, HEIGHT = screenInfo.current_w, screenInfo.current_h
 # initialize frames
 #pygame.time.init()
 frameCount = pygame.time.get_ticks()
-prev = 0
+
 
 # initialize screen
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
