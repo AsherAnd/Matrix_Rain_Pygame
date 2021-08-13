@@ -146,7 +146,7 @@ def main():
                 if event.key == pygame.K_SPACE and playing == False:
                     morpheus.play()
                     playing = True
-                else:
+                elif event.key == pygame.K_SPACE and playing == True:
                     morpheus.stop()
                     playing = False
 
