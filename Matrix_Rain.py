@@ -21,7 +21,7 @@ WIDTH, HEIGHT = screenInfo.current_w, screenInfo.current_h
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("M4TR1X.exe")
 motionBlur = pygame.Surface((WIDTH, HEIGHT))
-motionBlur.set_alpha(100)
+motionBlur.set_alpha(95)
 
 
 # initialize font
