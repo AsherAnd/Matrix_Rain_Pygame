@@ -142,6 +142,7 @@ def main():
 
             if event.type == pygame.KEYDOWN:
                 # when space bar is pushed
+                # Acount for audio ending and having to press space twice later
                 if event.key == pygame.K_SPACE and playing == False:
                     morpheus.play()
                     playing = True
