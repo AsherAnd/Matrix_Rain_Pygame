@@ -6,4 +6,3 @@ The program displays Katakana characters falling down the screen same as the int
 
 Pressing the spacebar plays an audio clip from the Movie!
 
-![alt text](https://raw.githubusercontent.com/AsherAnd/Matrix_Rain_Pygame/main/preview.png)
