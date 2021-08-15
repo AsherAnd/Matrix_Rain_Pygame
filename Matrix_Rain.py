@@ -55,7 +55,7 @@ class Katakana:
         self.y = random.randint(-HEIGHT, -HEIGHT/4)
         self.TXTSIZE = FONTSIZE
         self.fallSpeed = random.randrange(int(0.0015*HEIGHT), int(0.00601*HEIGHT))
-        self.value = str(chr(0x30A0 + random.randrange(0,96)))
+        self.value = ""
         self.switchSpeed = random.randint(2, 20)
         self.rowLength = random.randint(5, 12)
         self.row = [""]*self.rowLength
@@ -66,7 +66,7 @@ class Katakana:
         # create a row for each katakana character falling
         frameCount = pygame.time.get_ticks()
         for x in range(self.rowLength):
-            if not int(frameCount) % self.switchSpeed:
+            if int(frameCount) % self.switchSpeed == 0:
                 self.value = str(chr(0x30A0 + random.randrange(0,96)))
                 self.row[x] = self.value
         self.show()
