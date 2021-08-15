@@ -16,10 +16,6 @@ pygame.init()
 screenInfo = pygame.display.Info()
 WIDTH, HEIGHT = screenInfo.current_w, screenInfo.current_h
 
-# initialize frames
-#pygame.time.init()
-frameCount = pygame.time.get_ticks()
-
 
 # initialize screen
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -42,12 +38,15 @@ BGCOLOR = BLACK
 # audio
 morpheus = pygame.mixer.Sound(os.path.join('Assets', 'Audio/morpheus.mp3'))
 
+# initialize frames
+#pygame.time.init()
+frameCount = pygame.time.get_ticks()
+
 # frames per second
 FPS = 60
 # frame control
 clock = pygame.time.Clock()
 
-print(HEIGHT)
 # Katakana class
 class Katakana:
     # default properties
@@ -81,7 +80,7 @@ class Katakana:
                 self.color = LIGHTGREEN
             else:
                 # brightness of characters 
-                brightness = self.reMap(index, 5, 0, 70, 0)
+                brightness = self.reMap(index, len(self.row), 0, 70, 0)
                 GREEN.hsva = (127, 100, brightness, 100) # HSBA
                 self.color = GREEN
 
