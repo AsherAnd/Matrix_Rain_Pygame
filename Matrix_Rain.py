@@ -54,7 +54,7 @@ class Katakana:
         self.x = random.randint(0, WIDTH)
         self.y = random.randint(-HEIGHT, -HEIGHT/4)
         self.TXTSIZE = FONTSIZE
-        self.fallSpeed = random.randrange(int(0.0015*HEIGHT), int(0.00601*HEIGHT))
+        self.fallSpeed = random.randrange(int(0.0012*HEIGHT), int(0.00401*HEIGHT))
         self.value = ""
         self.switchSpeed = random.randint(2, 20)
         self.rowLength = random.randint(5, 12)
