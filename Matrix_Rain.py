@@ -17,6 +17,10 @@ screenInfo = pygame.display.Info()
 WIDTH, HEIGHT = screenInfo.current_w, screenInfo.current_h
 
 
+# change icon
+ico = pygame.image.load(os.path.join('Assets', 'Logo/Logo.png'))
+pygame.display.set_icon(ico)
+
 # initialize screen
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("M4TR1X.exe")
